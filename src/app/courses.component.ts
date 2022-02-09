@@ -4,16 +4,10 @@ import { CoursesService } from './courses.service';
 @Component({
     selector: 'courses',
     template: `
-            <img [src]="imageUrl"] />
-            <table>
-                <tr>
-                    <td [attr.colspan]="colSpan"]> </td>
-                </tr>
-            </table>
-`
+                <button type="button" class="btn btn-primary" [class.active]="isActive">Primary</button>
+            `
 })
 
 export class CoursesComponent {
-    imageUrl = "http//lorempixel.com/400/200";
-    colSpan = 2;
+    isActive = true;
 }
