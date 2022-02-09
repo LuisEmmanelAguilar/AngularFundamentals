@@ -4,10 +4,18 @@ import { CoursesService } from './courses.service';
 @Component({
     selector: 'courses',
     template: `
-                <button type="button" class="btn btn-primary" [class.active]="isActive">Primary</button>
+            <div (click)="onDivClicked()">
+                <button (click)="onSave()">Primary</button>
+            </div>
             `
 })
 
 export class CoursesComponent {
-    isActive = true;
+    onDivClicked() {
+        console.log("Div was clicked");
+    }
+    
+    onSave(){
+        console.log("Button was clicked");
+    }
 }
