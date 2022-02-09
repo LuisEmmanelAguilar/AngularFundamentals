@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
+import { AuthorsComponent } from './authors/authors.component';
+import { AuthorsService } from './authors.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
-    CoursesComponent
+    CoursesComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import { CoursesService } from './courses.service';
   ],
   //Register the service as a provider
   providers: [
-    CoursesService
+    CoursesService,
+    AuthorsService
   ],
   bootstrap: [AppComponent]
 })
