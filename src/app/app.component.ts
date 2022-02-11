@@ -9,11 +9,11 @@ export class AppComponent {
 
   post = {
     title: "Title",
-    isFavorite: false
+    isFavorite: true
   }
 
-  onFavoriteChanged() {
-    console.log("Fvaorite changed");
+  onFavoriteChanged(eventArgs: any) {
+    console.log("Favorite changed", eventArgs);
   }
 
 }
