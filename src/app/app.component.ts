@@ -7,13 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  post = {
-    title: "Title",
-    isFavorite: true
-  }
-
-  onFavoriteChanged(eventArgs: any) {
-    console.log("Favorite changed", eventArgs);
+  tweet = {
+    body: '...',
+    likesCount: 10,
+    isLiked: false
   }
 
 }
