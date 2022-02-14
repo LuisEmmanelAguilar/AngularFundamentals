@@ -1,9 +1,1 @@
-<button (click)="loadCourses()">Load Courses</button>
-<button (click)="onAdd()">Add New Course</button>
-<ul>
-    <li *ngFor="let course of courses; trackBy: trackCourse">
-        {{ course.name }} 
-        <button (click)="onRemove(course)">Remove</button>
-        <button (click)="onChange(course)">Update</button>
-    </li>
-</ul>
+<input type="text" [appInputFormat]="'uppercase'">
