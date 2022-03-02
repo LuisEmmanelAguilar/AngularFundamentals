@@ -9,7 +9,7 @@ import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
-import { AuthorsService } from './authors.service';
+import { AuthorsService } from './services/authors.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { PanelComponent } from './panel/panel.component';
@@ -22,6 +22,7 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NewCourseFormArrayComponent } from './new-course-form-array/new-course-form-array.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PostsComponent } from './posts/posts.component';
   ],
   //Register the service as a provider
   providers: [
+    PostService,
     CoursesService,
     AuthorsService
   ],
