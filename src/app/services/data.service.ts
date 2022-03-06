@@ -19,11 +19,13 @@ export class DataService {
   }
 
   create(resource:any) {
-    return this.http.post(this.url, resource)
-      .pipe(
-        map(response => response),
-        catchError(this.handleError)
-    );
+    return throwError(new AppError())
+    
+//    return this.http.post(this.url, resource)
+//      .pipe(
+//        map(response => response),
+//        catchError(this.handleError)
+//    );
   }
 
   update(resource:any) {
